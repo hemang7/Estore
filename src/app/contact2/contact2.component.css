@@ -1,0 +1,17 @@
+h4 {
+    color: white;
+}
+
+.footer {
+    background-color: #24262b;
+}
+
+.center-block {
+    margin: auto;
+    display: block;
+}
+
+.parent {
+    display: grid;
+    place-items: center;
+}

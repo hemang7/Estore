@@ -1,0 +1,42 @@
+<nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+        <h2>User Information</h2>
+        <!-- <div class="d-flex">
+            <button class="btn btn-primary">Add User</button>
+        </div> -->
+    </div>
+</nav>
+<br>
+
+ <!-- Search Filter -->
+
+ <div class="form-group">
+    <input type="text" class="form-control" id="search" placeholder="Search by Name" [(ngModel)]="searchName"> <br>
+    <!-- <input type="text" class="form-control" id="search" placeholder="Search by Name" [(ngModel)]="searchName" (keyup)="getUserByName()"> <br> -->
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of sign | filter:searchName">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
