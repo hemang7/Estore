@@ -27,6 +27,8 @@ export class Product2Component implements OnInit {
 
   searchProduct: any
 
+  // names = ["hemang", "Gaurav"];
+
   public totalItem: number = 0;
 
   ngOnInit(): void {
